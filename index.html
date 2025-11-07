@@ -1,34 +1,99 @@
 <!DOCTYPE html>
-<html lang="p-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="nerd.png" type="image/x-icon">
-    <title>Desafio 005</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="nerd.png" type="image/x-icon">
+    <title>Desafio 006</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-<p><b>* NEGRITO, </b>termo negrito(tag - <b>b</b>/não semântica) e a tag - <b>strong</b>/semântica, para termo em destaque;</p>
-<p><i>* ITALICO</i>, usa se a tag -<b>i </b>/não semântica(apenas destaca) e a tag - <b>em</b> /semântica(da ênfase); </p>
-<p>*<mark>TEXTO MARCADO </mark>, usa-se a tag <b>mark</b></p>
-<p>* TEXTOS <b>GRANDES</b> E <b>pequenos</b>, usa-se as tags - <b>big</b>(obsoleta) e <b>smoll</b>, respectivamente;</p>
-<p>* <del>TEXTO DELETADO</del> é um texto que deve se "lido" mas não deve ser "considerado", sua tag é <b>del</b>;</p>
-<p>* <ins>TEXTO INSERIDO</ins> é o texto que foi adicionado depois/ sua tag é <b>ins (é semântico)</b> e também a tag <b>u</b> (não semântico);</p>
-<P>* TEXTO<SUP>SOBRESCRITO</SUP>, cujo a tag é <b>sup</b>; </P> 
-<p>* TEXTO <sub>SUBSCRITO</sub>, cujo a tag é <b>sub</b>; </p>
-<p>* 1. <q> CITAÇÕES SIMPLES</q>, sua tag é <b>q</b> e ela insere <ins>aspas</ins> na parte citada; Ex,: Uma pessoa importante dise <q>O computadar é um burro mt rápido</q>.</p>
-<p>* 2. CITAÇÕES COMPLEXA(<b>blockquote</b>/mais langa), <q>ela</q> da um  afastameto da citação da linha de margem. <br> Ex.: <blockquote cite="https://www.pensador.com/frase/MzI4/?utm_source=whatsapp&utm_medium=referral">As religiões são caminhos diferentes convergindo para o mesmo ponto.<br> Que importância faz se seguimos por caminhos diferentes, desde que <br> alcancemos o mesmo objetivo?</blockquote></p>  
-continuação da pg anterior.
-<p>* <b>ABREVIAÇÕES</b>. Sua tag é <b>abbr</b>; Ex.: eu estudo <abbr title="Hyper Text Markup Language">html</abbr> para criar sites;</p>
-<p>* <bdo dir="rtl">TEXTO INVERTIDO</bdo>/ existem dois formatos, o <b>rtl</b> (p/esquerda) e o <b>ltr</b>(p/direita);</p>
-<p>*CÓDIGO FONTE/ PRE-FORMATADO, sua tag é <b>code</b> e da formatação ao código. Ex.:</p>  
-<pre>
-    <code>
-    num = int(imput('digite um numero'))
-    if num % 2 == o:
-        print ('o numero {num} é par')
-    else:
-        print ('o numero {num} é impar')
-    print ('fim do programa')    <p>...</p>
-    </code>     
+    <p>...
+        * LISTAS ORDENADAS(Ordered lists), sua tag é <b>ol</b> e servem para criar <q>listas Ordenadas</q>. <b>Elas</b> tem um parâmetro, o <q>type</q>, onde configuramos<br> o tipo de marcador da lista atual.<br> São elas(parâmetro): <br>
+        <br>
+        ‣ <b>1</b> - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, … <br>
+        <br>
+        ‣ <b>A</b> - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, … <br>
+        <br>
+        ‣ <b>a</b> - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, … <br>
+        <br>
+        ‣<b> I</b> - Cria listas com algarismos romanos em maiúsculas. Ex: I, II,III, IV, … <br>
+        <br>
+        ‣ <b>i</b> - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv... 
+    </p>
+        <P>Você também pode indicar o início da contagem usando o parâmetro <b>start</b>. Ex. de:
+        <br> <br><b>Listas Ordenadas</b>
+        <ol type="1"> <!-- 1, A, a, I, i -->
+        <li>acordar</li>
+        <li>tomar café</li> 
+        <li>ir trabalhar</li>
+        <li>voltar para casa</li>
+        <li>ir p/ faculdade</li>
+        <li>voltar da \\</li>
+        <li>tomar banho e </li>
+        <li>dormir</li>
+        </ol> 
+        <b>Listas não Ordenadas</b>
+        <ul type="square"> <!--disc(padão), circle, e square-->
+            <li>leite</li>
+            <li>trigo</li>
+            <li>feijão</li> 
+            <li>sal</li>
+            <li>farinha</li>
+        </ul>
+        <b>Minhas linguagens favorias</b> 
+             <ol >
+                 <li>Antigas</li>
+                 <ol type="a">
+                    <li>Clipper</li>
+                    <li>Visual Basico</li>
+                    <li>Delphi</li>
+                    <li>fortran</li>
+                 </ol>
+                 <li>Novas</li>
+                 <ol type="a" start="5">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                 </ol>
+             </ol>
+             <b>Meus Jogos Favoritos</b>
+             <ul type="disc">
+                <li>Nintendinho</li>
+                <ol type="1">
+                    <li>MB</li>
+                    <ul type="square">
+                        <li>SMB</li>
+                        <li>M: LL</li>
+                    </ul>
+                    <li>NG</li>
+                    <ul type="square">
+                        <li>NG III</li>
+                    </ul>
+                </ol>
+                <li>Super Nintendor</li>
+                <ol type="1">
+                  <li>SMW</li>
+                  <li>DK</li>
+                  <ul type="square">
+                    <li>DKC III</li>
+                    <li>DCQ</li>
+                  </ul>
+                </ol>
+                <li>Pleystation 1</li>  
+             </ul>
+             <b>Lista de definição</b>
+             <dl>
+                <dt><ins>HTML</ins>:</dt>
+                <dd>Linguagem de Marcação para a criação do conteúdo de um site(Hyper Text Markup Language/Linguagem de marcação de hipertexto).</dd>
+                <dt><ins>CSS</ins>:</dt>
+                <dd>Linguagem de Marcação para a criação do disgn de um site/Cascading Style Sheets(Folhas de Estilo em Cascata).</dd>
+                <dt><ins>JavaScript</ins>:</dt> 
+                <dd>Linguagem de programaçao para a criação de interatividade de um site.</dd>
+             </dl>
+  
+         </P>
+    
+
 </body>
 </html>
