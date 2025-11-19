@@ -2,20 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+    0">
     <link rel="shortcut icon" href="nerd.png" type="image/x-icon">
-    <title>Desafio 007</title>
+    <title>Desafio 008</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
-    <p>Você pode acessar meu <a href="https://linkedin.com/in/giordano-medeiros-caruso-643b07231" target="_blank" rel="external"> perfil pública no Linkedin</a></p>
-    <h2>Usando links internos</h2>
-    <p>Esta e minha 1ª pagina, se Você quiser, pode acessar minha <a href="pag002.html" rel="next" target="_self">2ª pagina</a> </p>
-    <p>Você também pode acessar a nossa <a href="Noticias/pg003.html" rel="next" target="_self">página de notícias</a></p>
-    <h1>Link para download</h1>
-    <ul>
-        <li><a href="Livro/Instala-es-El-tricas-residenciais-El-trica-do-Zero.pdf" type="_blank">Baixar o link em PDF</a></li><!--outras conf. para downlod =>verificar na site:"iana.org(tiposde mídia)"-->
-       <li><a href="Livro/Instala-es-El-tricas-residenciais-El-trica-do-Zero.zip" download="Instala-es-El-tricas-residenciais-El-trica-do-Zero.zip" type="application/zip">Livro compactado em zip</a></li>
-    </ul>
+    <h1>Imagens dinâmicas</h1>
+    <p>Temte abrir em vários dispositivos diferente ou simplismemte aumente/diminua o tamanho da tela.</p>
+    <picture>
+        <source media="(max-: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a Reproduzindo Áudios em HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/texte.mp3" type="audio/mpeg">
+        <source src="midia/texte.ogg" type="audio/ogg">
+        <source src="midia/texte.wev" type="audio/wev">
+        <p>Se seu navegador não reproduzir o audio, baixe-o aqui👇<a href="midia/texte.mp3"></a></p>
+    </audio>    
 </body>
 </html>
