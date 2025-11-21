@@ -2,27 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.
-    0">
-    <link rel="shortcut icon" href="nerd.png" type="image/x-icon">
-    <title>Desafio 008</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/nerd.png" type="image/x-icon">
+    <title>Desafio 009</title>
 </head>
 <body>
-    <h1>Imagens dinâmicas</h1>
-    <p>Temte abrir em vários dispositivos diferente ou simplismemte aumente/diminua o tamanho da tela.</p>
-    <picture>
-        <source media="(max-: 750px)" srcset="imagens/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
-        <img src="imagens/foto-g.png" alt="imagem flexível">
-    </picture>
-    <h1>Reproduzindo Áudios</h1>
-    <p>Vamos aprender a Reproduzindo Áudios em HTML5</p>
-    <audio preload="metadata" controls loop>
-        <source src="midia/texte.mp3" type="audio/mpeg">
-        <source src="midia/texte.ogg" type="audio/ogg">
-        <source src="midia/texte.wev" type="audio/wev">
-        <p>Se seu navegador não reproduzir o audio, baixe-o aqui👉<a href="midia/texte.mp3"></a></p>
-    </audio>    
-</body>
+    <h1>Incerindo videos hospedado localmente</h1>
+    <p>Este video está hospedado em meu proprio servidor.</p>
 
+    <video src="midia/vd.mp4" width="200" poster="imagens/capa.jpg"  controls autoplay loop></video>
+<h1>Inserindo videos do youTube</h1>
+
+<iframe width="200" height="315" src="https://www.youtube.com/embed/mdyjXHAsOmM?si=TYKDGJCm4CTehd8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+<h1>Video do vimeo</h1>
+
+<iframe src="https://player.vimeo.com/video/485545155?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="200" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="REEL"></iframe>
+</body>
 </html>
